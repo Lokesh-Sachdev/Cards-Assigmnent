@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: rota;
+  src: url('./fonts/Rota-Regular.otf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: rota;
+  src: url('./fonts/Rota-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: rota;
+  src: url('./fonts/Rota-Black.otf');
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: rota;
+  src: url('./fonts/Rota-Medium.otf');
+}
+
+:root {
+  --font-family: rota, sans-serif;
+
+  --color-purple: #5448c8;
+  --color-green: #6dd0a5;
+  --color-black: #2d2d2d;
+  --color-grey: #999;
+  --card-bg: #e7e7e7;
+}

@@ -1,0 +1,138 @@
+.App {
+  font-family: rota;
+  text-align: center;
+
+  .app__container {
+    padding: 3rem;
+
+    .cards {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .card {
+      width: 18rem;
+
+      padding: 15px;
+      border-radius: 15px;
+
+      background: var(--card-bg);
+
+      .card-title {
+        font-weight: bolder;
+        font-size: 2rem;
+        color: var(--color-black);
+
+        text-align: start;
+      }
+
+      .card__content {
+        display: flex;
+        gap: 1rem;
+
+        .card__content-air {
+          padding: 20px;
+
+          color: #fff;
+          background: var(--color-green);
+          border-radius: 50%;
+
+          font-size: 55px;
+          font-weight: bold;
+          width: 100px;
+          height: 100px;
+        }
+
+        .card__content-temp {
+          padding: 20px;
+
+          color: #fff;
+          background: var(--color-purple);
+          border-radius: 50%;
+
+          font-size: 55px;
+          font-weight: bold;
+          width: 100px;
+          height: 100px;
+        }
+
+        .card__content-temp_symbol {
+          font-size: 20px;
+          font-weight: normal;
+        }
+
+        .card__content-secondary {
+          font-size: 40px;
+          font-weight: bold;
+          color: var(--color-grey);
+
+          hr {
+            margin: 0.5rem 0;
+            border: 1px solid #d5d5d5;
+            width: 120px;
+          }
+
+          div {
+            display: flex;
+          }
+        }
+
+        .card__content-display {
+          font-size: 65px;
+          font-weight: bold;
+
+          color: var(--color-purple);
+
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .card__content-audio {
+        display: flex;
+        justify-content: space-around;
+
+        h1 {
+          font-size: 65px;
+          color: var(--color-purple);
+        }
+
+        .card__content-audio_text {
+          font-size: 25px;
+          height: 40px;
+
+          padding: 7px;
+          color: #fff;
+          background-color: var(--color-green);
+          border-radius: 10px;
+        }
+      }
+
+      .card__content_size {
+        font-size: 15px;
+        color: var(--color-grey);
+        margin: 10px 15px 0 0;
+
+        h2 {
+          font-size: 30px;
+          color: var(--color-black);
+        }
+      }
+    }
+  }
+}
